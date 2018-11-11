@@ -1,0 +1,66 @@
+.todos-creator {
+padding: 16px 16px;
+
+position: relative;
+}
+    .todos-creator:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .todos-creator_check-all {
+        float:left;
+        margin-right: 18px;
+        margin-left: 6px;
+        margin-top: 8px;
+        background: url("../../../../resources/icons/select-all.png") no-repeat 0 0;
+        width: 24px;
+        height: 12px;
+        border:0;
+    }
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+           (min-resolution: 120dpi),
+           (min-resolution: 1.5dppx) {
+                .todos-creator_check-all {
+                    background: url("../../../../resources/icons/select-all@2x.png") no-repeat 0 0;
+                    width: 48px;
+                    height: 24px;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                    margin-left: -6px;
+                    }
+                }
+
+    .todos-creator_text-input-w {
+        overflow: hidden;
+    }
+        .todos-creator_text-input {
+            border: none;
+            background: none;
+            outline:none;
+            width: 100%;
+            color: #666;
+            font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            font-style: italic;
+
+        }
+
+        .todos-creator_text-input::-webkit-input-placeholder{
+            font-style: italic;
+            color: #ccc;
+        }
+        .todos-creator_text-input::-moz-input-placeholder{
+            font-style: italic;
+            color: #ccc;
+        }
+        .todos-creator_text-input::-o-input-placeholder{
+            color: #ccc;
+            font-style: italic;
+        }
+        .todos-creator_text-input::-ms-input-placeholder{
+            font-style: italic;
+            color: #ccc;
+        }
