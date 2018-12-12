@@ -3,8 +3,6 @@
 
 @import "base/custom-checkbox/custom-checkbox.css";
 
-@import "font-style/font-style.css";
-
 @import "project/todos-title/todos-title.css";
 @import "project/todos-board/todos-board.css";
 @import "project/todos-creator/todos-creator.css";

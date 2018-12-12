@@ -11,7 +11,7 @@
     .todos-toolbar_unready-counter{
         float:left;
         margin-right:112px;
-        font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+        font-family: Arial, sans-serif;
         font-size: 14px;
         font-weight: 300;
         font-style: normal;
@@ -25,7 +25,7 @@
         margin:0;
     }
         .todos-toolbar_filter{
-            font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             font-size: 14px;
             font-weight: 300;
             font-style: normal;
@@ -38,8 +38,8 @@
             }
     .todos-toolbar_clear-completed{
         float: right;
-        margin-left:90px;
-        font-family: 'HelveticaNeueCyr', Arial, sans-serif;
+        margin-left:70px;
+        font-family: Arial, sans-serif;
         font-size: 14px;
         font-weight: 300;
         font-style: normal;
