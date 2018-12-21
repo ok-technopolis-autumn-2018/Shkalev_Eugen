@@ -5,7 +5,7 @@
 }
     .todos-toolbar:after{
         content:'';
-        clear both;
+        clear: both;
         display: table;
     }
     .todos-toolbar_unready-counter{

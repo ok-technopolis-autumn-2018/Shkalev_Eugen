@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="style/default.css" rel="stylesheet">
+
     <title>Todos MVC</title>
     
 </head>
@@ -12,19 +12,19 @@
 
         <h1 class="todos-title">todos</h1>
 
-        <div class="todos-board __has-content">
-            <form class="todos-creator">
+        <div class="todos-board">
+            <div class="todos-creator">
                 <button class="todos-creator_check-all" aria-label="Check all items as dine"></button>
                 <div class="todos-creator_text-input-w">
                     <input type="text" class="todos-creator_text-input" placeholder="What needs to be done?" aria-label="Input new todos"/>
                 </div>
 
-            </form>
+            </div>
 
-            <div class="todos-list ">
-                <div class="todos-list_item">
+            <div class="todos-list" >
+                <div class="todos-list_item __was-removed">
                     <div class="custom-checkbox todos-list_item_ready-marker">
-                        <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
+                        <input type="checkbox"  class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                         <div class="custom-checkbox_visual">
                             <div class="custom-checkbox_visual_icon">
                             </div>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="todos-list_item">
+                <!--<div class="todos-list_item __was-removed">
                     <div class="custom-checkbox todos-list_item_ready-marker">
                         <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                         <div class="custom-checkbox_visual">
@@ -54,7 +54,7 @@
                         <textarea class="todos-list_item_text" readonly rows="1">CSS</textarea>
                     </div>
                 </div>
-                <div class="todos-list_item">
+                <div class="todos-list_item __was-removed">
                     <div class="custom-checkbox todos-list_item_ready-marker">
                         <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                         <div class="custom-checkbox_visual">
@@ -69,7 +69,7 @@
                         <textarea class="todos-list_item_text" readonly rows="1">JS</textarea>
                     </div>
                 </div>
-                <div class="todos-list_item">
+                <div class="todos-list_item __was-removed">
                     <div class="custom-checkbox todos-list_item_ready-marker">
                         <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
                         <div class="custom-checkbox_visual">
@@ -83,7 +83,7 @@
                     <div class="todos-list_item_text-w">
                         <textarea class="todos-list_item_text" readonly rows="1">JS Tools</textarea>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <div class="todos-toolbar">
