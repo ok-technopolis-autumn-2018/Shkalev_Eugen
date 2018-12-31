@@ -1,7 +1,31 @@
 
 import '../styles/default.scss';
+import {TodoCreatorComponent} from "./UI/Components/TodoCreatorComponent";
+import {TodoListComponent} from "./UI/Components/TodoListComponent";
+import {TodoToolsBarComponent} from "./UI/Components/TodoToolsBarComponent";
 
-document.addEventListener('DOMContentLoaded',function () {
+var todoCreator = document.querySelector('.todos-creator');
+var todoList = document.querySelector('.todos-list');
+var todoToolBar = document.querySelector('.todos-toolbar');
+const todoCreatorComponent = new TodoCreatorComponent(todoCreator);
+const todoListComponent = new TodoListComponent(todoList);
+const todoToolBarComponent = new TodoToolsBarComponent(todoToolBar,todoList);
+
+todoCreatorComponent.on('addItem',text =>todoListComponent.addItem(text));
+todoCreatorComponent.on('addItem',() =>todoToolBarComponent.countWatcher());
+
+todoCreatorComponent.on('markAllAsDone',() =>todoListComponent.markAllAsDone());
+todoCreatorComponent.on('markAllAsDone',() =>todoToolBarComponent.countWatcher());
+
+
+todoListComponent.on('removeItem',(item)=>todoListComponent.removeItem(item));
+todoListComponent.on('removeItem',() =>todoToolBarComponent.countWatcher());
+
+todoListComponent.on('checkBoxAction',(item)=>todoListComponent.checkBoxAction(item));
+todoListComponent.on('checkBoxAction',() =>todoToolBarComponent.countWatcher());
+
+
+/*document.addEventListener('DOMContentLoaded',function () {
 
 
     var todos_creator = document.querySelector(".todos-creator_text-input-w");
@@ -182,6 +206,7 @@ document.addEventListener('DOMContentLoaded',function () {
         updateCounter();
     });
 });
+*/
 
 
 console.log('init');
